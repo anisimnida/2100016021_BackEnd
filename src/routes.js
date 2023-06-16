@@ -2,21 +2,19 @@ const express = require('express');
 const router = express.Router();
 const { loggerMiddleware } = require('./middleware');
 const {
-  getAllMahasiswa,
-  createMahasiswa,
-  deleteMahasiswa,
-  editMahasiswa,
-} = require('./controllers/mahasiswaController');
+  getAllKaryawan,
+  createKaryawan,
+  deleteKaryawan,
+  editKaryawan,
+} = require('./controllers/karyawanController');
 
 // Middleware
 router.use(loggerMiddleware);
 
-
-// Mahasiswa routes
-router.get('/mahasiswa', getAllMahasiswa);
-router.post('/mahasiswa', createMahasiswa);
-router.delete('/mahasiswa/:id', deleteMahasiswa);
-router.put('/mahasiswa/:id', editMahasiswa);
-
+// Karyawan routes
+router.get('/karyawan', getAllKaryawan);
+router.post('/karyawan', createKaryawan);
+router.delete('/karyawan/:id', deleteKaryawan);
+router.put('/karyawan/:id', editKaryawan);
 
 module.exports = router;

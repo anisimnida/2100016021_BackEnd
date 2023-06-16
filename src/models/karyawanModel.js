@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const mahasiswaSchema = new mongoose.Schema({
-  Nim: {
-    type: Number,
+const karyawanSchema = new mongoose.Schema({
+  NIK: {
+    type: String,
     required: true
   },
 
@@ -22,6 +22,6 @@ const mahasiswaSchema = new mongoose.Schema({
   }
 });
 
-const MahasiswaModel = mongoose.model('Mahasiswa', mahasiswaSchema);
+const KaryawanModel = mongoose.model('Karyawan', karyawanSchema);
 
-module.exports = MahasiswaModel;
+module.exports = KaryawanModel;

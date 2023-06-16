@@ -4,10 +4,10 @@ const routes = require('./src/routes');
 
 // Set up the Express app
 const app = express();
-const port = 3000;
+const port = 3002;
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://regina2100016083:Gina0110@cluster0.vacfo18.mongodb.net/', {
+mongoose.connect('mongodb+srv://anisa:anisayahud@cluster0.ybpqfsr.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
